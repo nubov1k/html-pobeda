@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const victoryElement = document.getElementById("victory-years");
-  const date = new Date("1986-01-01");
+  const date = new Date("1986-01-01"); // https://ru.wikipedia.org/wiki/HTML
 
   setInterval(() => {
     const calculate = (new Date() - date) / (1000 * 60 * 60 * 24) / 365;
