@@ -10,11 +10,3 @@ document.addEventListener('DOMContentLoaded', () => {
     victoryElement.innerText = calculate;
   }, 100);
 });
-
-function showMemes() {
-  const imagesElement = document.getElementsByClassName("images")[0];
-  const buttonsElement = document.getElementsByClassName("buttons")[0];
-
-  imagesElement.hidden = false;
-  buttonsElement.style.display = "none";
-};
