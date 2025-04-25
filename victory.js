@@ -3,18 +3,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const victoryElement = document.getElementById("victory-years");
-  const date = new Date("1986-01-01");
+  const date = new Date("1986-01-01"); // https://ru.wikipedia.org/wiki/HTML
 
   setInterval(() => {
     const calculate = (new Date() - date) / (1000 * 60 * 60 * 24) / 365;
     victoryElement.innerText = calculate;
   }, 100);
 });
-
-function showMemes() {
-  const imagesElement = document.getElementsByClassName("images")[0];
-  const buttonsElement = document.getElementsByClassName("buttons")[0];
-
-  imagesElement.hidden = false;
-  buttonsElement.style.display = "none";
-};
