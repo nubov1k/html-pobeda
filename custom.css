@@ -71,7 +71,8 @@ summary {
   cursor: grab;
   padding: 8px 1em;
   font-size: 94%;
-  border: 2px solid var(--text-color);
+  border: 2px solid var(--buttons-border-color);
+  border-radius: 6px;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
