@@ -21,6 +21,7 @@
   <link href="https://nbvk.kittyy.ru/files/css/preloader.css" rel="stylesheet">
   <link href="https://nbvk.kittyy.ru/files/css/main.css" rel="stylesheet">
   <script src="https://nbvk.kittyy.ru/files/js/cards.js" type="text/javascript"></script>
+  <script src="https://nbvk.kittyy.ru/files/js/list.js" type="text/javascript"></script>
   <script src="./victory.js" type="text/javascript"></script>
   <link href="./custom.css" rel="stylesheet">
   <link rel="shortcut icon" href="https://nubovik01.github.io/files/images/icons/html5.webp">
@@ -36,6 +37,7 @@
       <p>Почему 2026 — год хтмл победы?</p>
     </div>
     <div class="cards"></div>
+    <div id="cards"></div>
     <div>
       <h1 class="victory-time">
         ХТМЛ ПОБЕДА УЖЕ <span id="victory-years">ВЕЧНОСТЬ</span> ЛЕТ
@@ -57,7 +59,8 @@
 </body>
 
 <script>
-  listCards([
+
+  const reasons = [
     {
       title: "HTML не нуждается в обновлении движка или отдельных модулей для своей нормальной работоспособности.",
       icon: "./images/numeric/5.png"
@@ -78,7 +81,9 @@
       title: "Это бесплатный язык разметки гипертекста с простым и понятным синтаксисом, способный пропускать ошибки в коде.",
       icon: "./images/numeric/1.png"
     }
-  ]);
+  ].reverse();
+
+  makeList("cards", reasons)
 </script>
 
 </html>
